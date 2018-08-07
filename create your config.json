@@ -1,0 +1,46 @@
+{
+  "token": "your token here!",
+  "prefix": "!",
+  "discord_guild":[
+    {
+      "servername": "Raids",
+      "id": "0100000000000000000"
+    },
+    {
+      "servername": "Keystones Boony-Bot-Test",
+      "id": "000000000000000000",
+      "rolename": "Keystone",
+      "channelid": "000000000000000000"
+    },
+    {
+      "servername": "Guild server",
+      "id": "000000000000000000",
+      "rolename": "Network - Guild: Guild server",
+      "channelid": "000000000000000000"
+    }
+  ],
+  "main_server":
+  [
+    {
+      "channelid": "000000000000000000",
+      "description_name": "BotChannel",
+      "channelname": "bot-channel"
+    },
+    {
+      "channelid": "000000000000000000",
+      "description_name": "MainNetworkInfo",
+      "channelname": "network-info"
+    }
+  ],
+  "main_network":
+  [
+    {
+      "roleid": "000000000000000000",
+      "rolename": "Network - Guild:"
+    },
+    {
+      "roleid": "000000000000000000",
+      "rolename":"Guild server tagname"
+    }
+  ]
+}
