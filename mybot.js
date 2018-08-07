@@ -17,7 +17,7 @@ const client = new Discord.Client();
 
 // Moved to the config file:
 // The token of your bot - https://discordapp.com/developers/applications/me
-const config = require("./config.json");
+const config = require("./config.json"); // "create your config.json file" and rename it to config.json
 const boonBot = new BoonBot(undefined, config);
 // The ready event is vital, it means that your bot will only start reacting to information
 // from Discord _after_ ready is emitted
