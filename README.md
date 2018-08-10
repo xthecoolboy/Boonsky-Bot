@@ -16,7 +16,7 @@
 ## Setup
 Creating a new bot account
 
-1. Head over to the applicatons page. https://discordapp.com/developers/applications/me
+1. Head over to the [applicatons page.](https://discordapp.com/developers/applications/me) 
 2. Click “new application”. Give it a name, picture and description.
 3. Click “Create Bot User” and click “Yes, Do It!” when the dialog pops up.
 4. Copy down the token. This is what is used to login to Boonsky-Bot.
@@ -26,7 +26,7 @@ Find client ID for your bot and replace 000000000000000000 in the link below.
 You can invite the bot using this link afther your replaced 000000000000000000 with your client id of your bot.
 https://discordapp.com/api/oauth2/authorize?client_id=000000000000000000&permissions=487668817&scope=bot
 
-## information Boonsky-Bot
+## Information Boonsky-Bot
 When bot joins a server and has the right permissions, it should create a text channel: #bot-channel. and add the following roles to the server: Boonsky-Bot, Keystone, Raider.
 
 If a user join a voice channel or leave a voice channel and there is no show-logger-on role yet it will create that role, and make a category channel: Logger and a text channel: #announce-voice-channel-user.
