@@ -13,6 +13,9 @@
 | !SyncMembers                              | Administrator can synq roles cross network guilds.    |
 | !KeystoneServer                           | Administrator to create channel category for server.  |
 
+## Intro and idea box
+This bot im working on is ment for my World of Warcraft Guild, we play together with other guilds, and making a network for the guilds is the idea for this bot.
+We currently share a raid discord server wouldnt it be nice if we have roles that share among servers? keeping the members roles synced from the raid server to the other keystone server or guild server or all other servers that are part of the network. Maby a future where we have the keystone server for competitions with the guilds in are guild network.
 
 ## Setup
 Creating a new bot account
@@ -48,8 +51,4 @@ Administrator can also choise to keep it all on same server, if you use command 
 The user can use command: **!keystone on** or **!keystone off** to turn on there role, to show or hide the Keystone channels.
 
 ### Guild server
-Administrator can turn on or off the **guild tag nickname** with command: **!guild tag on** or **!guild tag off** 
-
-### Intro and idea box
-This bot im working on is ment for my World of Warcraft Guild, we play together with other guilds, and making a network for the guilds is the idea for this bot.
-We currently share a raid discord server wouldnt it be nice if we have roles that share among servers? keeping the members roles synced from the raid server to the other keystone server or guild server or all other servers that are part of the network. Maby a future where we have the keystone server for competitions with the guilds in are guild network.
+Administrator can turn on or off the **guild tag nickname** with command: **!guild tag on** or **!guild tag off**
