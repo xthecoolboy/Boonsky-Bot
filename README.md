@@ -33,4 +33,4 @@ If a user join a voice channel or leave a voice channel and there is no show-log
 I havent made it yet it ordens the channels so you will have to drag #announce-voice-channel-user channel to its parent category channel: Logger to be com a sub channel.
 
 The user can use the command **!logger on** or **!logger off** to show or hide the channel.
-When somebody joins, leaves, switches channel the bot will send a messsage to #announce-voice-channel-user and if you have that text channel selected it will read out in Text-To-Speach (TTS) who joined or leaved or switched witch channel.
+When somebody joins, leaves, switches channel the bot will send a messsage to #announce-voice-channel-user and if you have that text channel selected it will read out in Text-To-Speach (TTS) who joined or leaved or switched channel.
