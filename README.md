@@ -1,5 +1,6 @@
 # Boonsky-Bot
 
+## Commands
 | commands                                  | description                                           |
 | ----------------------------------------- |:-----------------------------------------------------:|
 | !logger on                                | turns role on for user on discord.                    |
@@ -27,10 +28,21 @@ You can invite the bot using this link afther your replaced 000000000000000000 w
 https://discordapp.com/api/oauth2/authorize?client_id=000000000000000000&permissions=487668817&scope=bot
 
 ## Information Boonsky-Bot
+
+### First time creation by bot
 When bot joins a server and has the right permissions, it should create a text channel: #bot-channel. and add the following roles to the server: Boonsky-Bot, Keystone, Raider.
 
-If a user join a voice channel or leave a voice channel and there is no show-logger-on role yet it will create that role, and make a category channel: Logger and a text channel: #announce-voice-channel-user.
+If a user join a voice channel or leave a voice channel and there is no **show-logger-on** role yet it will create that role, and make a category channel: Logger and a text channel: #announce-voice-channel-user.
 I havent made it yet it ordens the channels so you will have to drag #announce-voice-channel-user channel to its parent category channel: Logger to be com a sub channel.
 
-The user can use the command **!logger on** or **!logger off** to show or hide the channel.
+### announce users for members with role show-logger-on
+The user can use the command **!logger on** or **!logger off** to show or hide the channel messages.
 When somebody joins, leaves, switches channel the bot will send a messsage to #announce-voice-channel-user and if you have that text channel selected it will read out in Text-To-Speach (TTS) who joined or leaved or switched channel.
+
+### Keystone server
+Administrator can choise to make a difrent Keystone server, or keep the channels on the same discord server or use both ways.
+The idea is that if you do the difrent Keystone server thing the roles get set to the members that are on the guild server or raid server from the keystone server by using the command: **!SyncMembers**
+
+Administrator can also choise to keep it all on same server, if you use command **!KeystoneServer** it will create channel category: Keystone, and here we can add extra voice channels for the 5 slot keystones players.  
+
+The user can use command: !keystone on or !keystone off to turn on there role, to show or hide the Keystone channels.
