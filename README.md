@@ -35,7 +35,7 @@ When bot joins a server and has the right permissions, it should create a text c
 If a user join a voice channel or leave a voice channel and there is no **show-logger-on** role yet it will create that role, and make a category channel: Logger and a text channel: #announce-voice-channel-user.
 I havent made it yet it ordens the channels so you will have to drag #announce-voice-channel-user channel to its parent category channel: Logger to be com a sub channel.
 
-### announce users for members with role show-logger-on
+### Announce users for members with role show-logger-on
 The user can use the command **!logger on** or **!logger off** to show or hide the channel messages.
 When somebody joins, leaves, switches channel the bot will send a messsage to #announce-voice-channel-user and if you have that text channel selected it will read out in Text-To-Speach (TTS) who joined or leaved or switched channel.
 
@@ -45,4 +45,4 @@ The idea is that if you do the difrent Keystone server thing the roles get set t
 
 Administrator can also choise to keep it all on same server, if you use command **!KeystoneServer** it will create channel category: Keystone, and here we can add extra voice channels for the 5 slot keystones players.  
 
-The user can use command: !keystone on or !keystone off to turn on there role, to show or hide the Keystone channels.
+The user can use command: **!keystone on** or **!keystone off** to turn on there role, to show or hide the Keystone channels.
