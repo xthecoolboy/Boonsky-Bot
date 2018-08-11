@@ -52,4 +52,4 @@ The user can use command: **!keystone on** or **!keystone off** to turn on there
 
 ### Guild server
 Administrator can turn on or off the **guild tag nickname** with command: **!guild tag on** or **!guild tag off**
-:)
+:P>
