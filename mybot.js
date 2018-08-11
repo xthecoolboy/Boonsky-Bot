@@ -403,21 +403,23 @@ client.on("message", (message) => {
   }
   // for testing purpose.                                                                                                                 ####
   if(message.content.startsWith(config.prefix + "test")){
-    // To send message template set server, client
-    cmdNetwork.server = message.guild.channels;                                                 // set server.
-    cmdNetwork.client = message.client.channels;                                                // set client.
-    // Template version on
-    cmdNetwork.sendMessageToMainOn(                                                             // sending message here to main server.
-      config.main_server["0"].channelid,                                                        // set param1: channel id, use to send message to.
-      config.main_network["0"].roleid,                                                          // set param2: role id on Main server example role.
-      config.main_network["1"].roleid,                                                          // set param3: role id example guild server.
-    );   
-    // Template version off
-    cmdNetwork.sendMessageToMainOff(                                                            // sending message here to main server.
-      config.main_server["0"].channelid,                                                        // set param1: channel id, use to send message to.
-      config.main_network["0"].roleid,                                                          // set param2: role id on Main server example role.
-      config.main_network["1"].rolename,                                                        // set param3: guildName example guild server.
-    );
+    if(message.channel.permissionsFor(message.member).has("ADMINISTRATOR")){                      // if member is administrator true.
+      // To send message template set server, client
+      cmdNetwork.server = message.guild.channels;                                                 // set server.
+      cmdNetwork.client = message.client.channels;                                                // set client.
+      // Template version on
+      cmdNetwork.sendMessageToMainOn(                                                             // sending message here to main server.
+        config.main_server["0"].channelid,                                                        // set param1: channel id, use to send message to.
+        config.main_network["0"].roleid,                                                          // set param2: role id on Main server example role.
+        config.main_network["1"].roleid,                                                          // set param3: role id example guild server.
+      );   
+      // Template version off
+      cmdNetwork.sendMessageToMainOff(                                                            // sending message here to main server.
+        config.main_server["0"].channelid,                                                        // set param1: channel id, use to send message to.
+        config.main_network["0"].roleid,                                                          // set param2: role id on Main server example role.
+        config.main_network["1"].rolename,                                                        // set param3: guildName example guild server.
+      );
+    } 
   }
   // Create Keystone category channel                                                                                                     ####
   if(message.content.startsWith(config.prefix + "KeystoneServer")){                             // message starts prefix + command. 
