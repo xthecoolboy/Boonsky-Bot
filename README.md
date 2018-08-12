@@ -14,7 +14,7 @@
 | !KeystoneServer                           | Administrator to create channel category for server.  |
 
 ## Intro and idea box
-This bot im working on is ment for my World of Warcraft Guild, we play together with other guilds, and making a network for the guilds is the idea for this bot.
+This bot im working on is in beta and ment for my World of Warcraft Guild, we play together with other guilds, and making a network for the guilds is the idea for this bot.
 We currently share a raid discord server wouldnt it be nice if we have roles that share among servers? keeping the members roles synced from the raid server to the other keystone server or guild server or all other servers that are part of the network. Maby a future where we have the keystone server for competitions with the guilds in are guild network.
 
 ## Setup
