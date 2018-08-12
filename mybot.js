@@ -460,18 +460,19 @@ client.on("message", (message) => {
   if (!message.content.startsWith(config.prefix) || message.author.bot) return;                 // clients can join roles with command aswel.
     cmdlogger.setRoleToggle();                                                                  // logger   on or off.
     cmdkeystone.setCommandListenerToggle();                                                     // keystone on or off.
-    if(message.member.roles.find("name", "Guild Member")){                                      // findrole Guild Member.
-      const cmdGuild = new Guild;                                                               // set object of guild.
-      const cmdBot = new BoonBot(message, config);                                              // set object of boonbot.
-      cmdBot.server = message.guild;                                                            // set server.
-      cmdBot.findChannelOn()                                                                    // find channel bot-channel.
-      if(cmdBot.channel !== null) {                                                             // if channel null false 
-        if(cmdBot.channel.id === config.discord_guild["2"].channelid){                          // compare channel id
-          cmdGuild.setGuildTagToggle(config.prefix, message, config.main_network["1"].rolename);// Guild tag on or off, Role: Guild Member, GuildTag
-        }                                                          
-      }
-      cmdBot.server = undefined;                                                                // unset server.
-    }
+    // if(message.member.roles.find("name", "Guild Member")){                                      // findrole Guild Member.
+    //   const cmdGuild = new Guild;                                                               // set object of guild.
+    //   const cmdBot = new BoonBot(message, config);                                              // set object of boonbot.
+    //   cmdBot.server = message.guild;                                                            // set server.
+    //   cmdBot.findChannelOn()                                                                    // find channel bot-channel.
+    //   // trouble on Shameless Tree House server with changing .setNickname()
+    //   if(cmdBot.channel !== null) {                                                             // if channel null false 
+    //     if(cmdBot.channel.id === config.discord_guild["2"].channelid){                          // compare channel id
+    //       cmdGuild.setGuildTagToggle(config.prefix, message, config.main_network["1"].rolename);// Guild tag on or off, Role: Guild Member, GuildTag
+    //     }                                                          
+    //   }
+    //   cmdBot.server = undefined;                                                                // unset server.
+    // }
 
 });
 
