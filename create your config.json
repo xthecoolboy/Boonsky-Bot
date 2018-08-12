@@ -17,6 +17,12 @@
       "id": "000000000000000000",
       "rolename": "Network - Guild: Guild server",
       "channelid": "000000000000000000"
+    },
+    {
+      "servername": "Raids Boony-Bot-Test",
+      "id": "000000000000000000",
+      "rolename": "Raider",
+      "channelid": "000000000000000000"
     }
   ],
   "main_server":

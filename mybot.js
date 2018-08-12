@@ -40,10 +40,12 @@ client.on("ready", () => {
 const guildOne = new Guild;
 const guildTwo = new Guild;
 const guildServer = new Guild;
+const guildRaids = new Guild;
 const boonBotGuilds = [
   guildOne.setServerName(config.discord_guild["0"].servername).setServerID(config.discord_guild["0"].id),
   guildTwo.setServerName(config.discord_guild["1"].servername).setServerID(config.discord_guild["1"].id),
-  guildServer.setServerName(config.discord_guild["2"].servername).setServerID(config.discord_guild["2"].id)
+  guildServer.setServerName(config.discord_guild["2"].servername).setServerID(config.discord_guild["2"].id),
+  guildRaids.setServerName(config.discord_guild["3"].servername).setServerID(config.discord_guild["3"].id)
 ];
 
 client.on("ready", () => {
@@ -331,7 +333,7 @@ client.on("message", (message) => {
   }
   // sets role on multiple servers the same as assigning server.                                                                          ####
   if(message.content.startsWith(config.prefix + "SyncMembers")){                                // message starts prefix + command
-    const listRaid        = message.client.guilds.get(guildOne.id);                             // set ID get collection guild.
+    const listRaid        = message.client.guilds.get(guildRaids.id);                           // set ID get collection guild.
     const listKeystone    = message.client.guilds.get(guildTwo.id);                             // set ID get collection guild.
     const listGuildserver = message.client.guilds.get(guildServer.id);                          // set ID get collection guild.
 
