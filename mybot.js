@@ -27,7 +27,7 @@ client.on("ready", () => {
     "\n", boonBot.sayReady(), "\n", boonBot.showServeSize(client.guilds.size, client.users.size), "\n", boonBot.login(client.user.tag), "\n", boonBot.login(client.user.username)
   );
 
-  boonBot.setActivity("Yuba", { type: 'WATCHING'})
+  boonBot.setActivity("Bliep bliep!", { type: 'WATCHING'})
 
   client.user.setActivity
   (
