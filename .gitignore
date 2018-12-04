@@ -2,3 +2,4 @@ config.json
 package-lock.json
 bak/*
 node_modules/*
+mybot.js
