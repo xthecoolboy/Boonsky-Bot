@@ -4,7 +4,7 @@
   "description": "A Discord Bot.",
   "main": "mybot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node mybot.js"
   },
   "author": "ZeNz384",
   "license": "ISC",
